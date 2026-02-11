@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Projet GLP n 49 - Logiciel de reconnaissance de caracteres et de mots manuscrits" />
+    <meta name="author" content="Trinome GLP - Universite" />
+    <title>Accueil - Projet GLP ECRITURE</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+</head>
+
+<body id="haut-de-page">
+
+    <header id="en-tete">
+        <h1>Projet GLP n°49 : ECRITURE</h1>
+        <p>Logiciel de reconnaissance de caracteres et de mots manuscrits</p>
+        <span class="sous-titre">Projet Genie Logiciel : 2025/2026</span>
+    </header>
+
+
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">Accueil</a></li>
+            <li><a href="projet.html">Projet</a></li>
+            <li><a href="cahier-des-charges.html">Cahier des charges</a></li>
+            <li><a href="equipe.html">Equipe</a></li>
+            <li><a href="technologie.html">Technologies</a></li>
+            <li><a href="realisations.html">Realisations</a></li>
+            
+        </ul>
+    </nav>
+
+    <aside class="menu-lateral">
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#objectifs">Objectifs</a></li>
+            <li><a href="#fonctionnalites">Fonctionnalites</a></li>
+            <li><a href="#technologies">Technologies</a></li>
+        </ul>
+    </aside>
+
+    <main class="contenu-principal avec-menu-lateral">
+        <img src="img/Schemaindex.png"
+             alt="Schema du projet GLP ECRITURE - Reconnaissance d ecriture manuscrite"
+             class="banniere" />
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <div class="clearfix">
+                <img src="img/letter.png"
+                     alt="Illustration de lettres manuscrites sur une grille de pixels"
+                     class="illustration-droite" />
+                <p class="hero-texte">
+                    La reconnaissance de l'ecriture manuscrite constitue un pont essentiel entre
+                    l'interaction humaine et le traitement numerique. Ce projet explore ce defi en
+                    transformant un trace manuel fluide en une donnee structuree et analysable par
+                    un systeme informatique.
+                </p>
+                <p>
+                    Le <strong>Projet GLP n°49 : ECRITURE</strong> propose de concevoir et realiser
+                    un logiciel capable de reconnaitre des caracteres et des mots manuscrits, en
+                    s'adaptant progressivement au style d'ecriture de chaque utilisateur grace a un
+                    mecanisme d'<em>apprentissage automatique simplifie</em>.
+                </p>
+            </div>
+
+            <p>
+                Pour en savoir plus sur la reconnaissance de l'ecriture, consultez la
+                <a href="https://fr.wikipedia.org/wiki/Reconnaissance_de_l%27%C3%A9criture_manuscrite"
+                   target="_blank" rel="noopener">
+                    page Wikipedia sur la reconnaissance de l'ecriture manuscrite
+                </a>.
+            </p>
+        </section>
+
+        <hr class="separateur" />
+
+        <section id="objectifs">
+            <h2>Objectifs du projet</h2>
+            <div class="clearfix">
+                <img src="img/Schema_reco.png"
+                     alt="Maquette de l interface graphique du logiciel de reconnaissance"
+                     class="illustration-gauche" />
+                <p>
+                    Notre objectif est de concevoir un logiciel offrant une <strong>interface graphique
+                    (IHM)</strong> permettant a l'utilisateur de dessiner des lettres a l'aide de la
+                    souris sur une grille discretisee. Chaque lettre dessinee est analysee, stockee
+                    et exploitee afin d'ameliorer progressivement la reconnaissance.
+                </p>
+                <ul>
+                    <li>Concevoir une IHM interactive et ergonomique</li>
+                    <li>Modeliser les caracteres sous forme de matrices binaires (15 × 15)</li>
+                    <li>Implementer un algorithme de comparaison par similarite</li>
+                    <li>Integrer un mecanisme d'apprentissage progressif</li>
+                    <li>Gerer des profils utilisateurs avec bases de donnees individuelles</li>
+                </ul>
+            </div>
+            <p>
+                Ce projet s'inscrit dans le domaine de
+                <a href="https://fr.wikipedia.org/wiki/Intelligence_artificielle"
+                   target="_blank" rel="noopener">
+                    l'Intelligence Artificielle
+                </a>.
+            </p>
+
+            <p class="note-contextuelle">
+                Ce logiciel est developpe en Java dans le cadre du module Genie Logiciel et Projet (GLP).
+            </p>
+        </section>
+        <hr class="separateur" />
+        <section id="fonctionnalites">
+            <h2>Fonctionnalites principales</h2>
+
+            <div class="grille-features">
+                <div class="feature-carte">
+                    
+                    <h3>Ecriture libre</h3>
+                    <p>
+                        L'utilisateur ecrit un mot de <strong>20 caracteres max</strong>
+                        avec la souris comme stylo virtuel sur une grille 15 × 15.
+                    </p>
+                </div>
+                <div class="feature-carte">
+                    
+                    <h3>Reconnaissance</h3>
+                    <p>
+                        Chaque lettre est analysee par comparaison matricielle et identifiee
+                        grace a une <em>mesure de similarite</em>.
+                    </p>
+                </div>
+                <div class="feature-carte">
+                   
+                    <h3>Apprentissage IA</h3>
+                    <p>
+                        Le systeme s'adapte au <em>style calligraphique</em> de chaque
+                        utilisateur pour ameliorer la precision.
+                    </p>
+                </div>
+            </div>
+
+            <article>
+                <h3>Gestion des profils</h3>
+                <p>
+                    Creation de comptes utilisateurs, connexion securisee et sauvegarde
+                    automatique des donnees d'apprentissage avant chaque deconnexion.
+                </p>
+            </article>
+            <p>
+                En savoir plus sur
+                <a href="https://fr.wikipedia.org/wiki/Intelligence_artificielle#Approches"
+                   target="_blank" rel="noopener">
+                    les approches de l'IA (section Approches)
+                </a>.
+            </p>
+        </section>
+
+        <hr class="separateur" />
+
+        <section id="technologies">
+          <h2>Technologies utilisees</h2>
+        
+                    <div class="clearfix">
+                        <img src="img/java.png"
+                        alt="Illustration du langage Java et des technologies utilisees"
+                        class="illustration-droite-java" />
+                        <p>
+                        Le projet repose sur un ensemble de technologies eprouvees dans le domaine
+                        du genie logiciel :
+                            </p>
+                        <ul>
+                            <li><span class="badge">Java</span> : Langage principal de developpement</li>
+                            <li><span class="badge">Swing</span> : Bibliotheque pour l'IHM graphique</li>
+                            <li><span class="badge">Algorithmes</span> : Traitement matriciel et similarite</li>
+                            <li><span class="badge-rouge">IA simplifiee</span> : Apprentissage automatique adaptatif</li>
+                        </ul>
+                    </div>
+
+        
+
+
+
+            
+                
+            <p>
+                Decouvrez les technologies en detail sur la page
+                <a href="technologie.html">Technologies</a>.
+            </p>
+
+           
+        </section>
+
+        <a href="#haut-de-page" class="retour-haut"> Retour en haut</a>
+
+    </main>
+
+ 
+   <footer>
+        <div class="footer-contenu">
+            <div class="footer-section">
+                <h3>Projet GLP ECRITURE</h3>
+                <span>
+                    Logiciel de reconnaissance de caracteres et de mots manuscrits,
+                    developpe dans le cadre du module Genie Logiciel et Projet.
+                </span>
+                <span><a href="index.html">Retour a l'accueil</a></span>
+            </div>
+            <div class="footer-section">
+                <h3>Navigation</h3>
+                <ul class="footer-liens">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="projet.html">Projet</a></li>
+                    <li><a href="equipe.html">Equipe</a></li>
+                    <li><a href="technologie.html">Technologies</a></li>
+                    <li><a href="realisations.html">Realisations</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <address>
+                    <span class="footer-info">L2 Informatique : CY Cergy Paris Universite</span>
+                    <span class="footer-info">
+                        <a href="https://www.google.com/maps/place/Saint-Martin,+2+Av.+Adolphe+Chauvin,+95300+Pontoise"
+                           target="_blank" rel="noopener">
+                            2 Av. Adolphe Chauvin, 95300 Pontoise
+                        </a>
+                    </span>
+                </address>
+            </div>
+            <div class="footer-section">
+                <h3>Suivez-nous</h3>
+                <ul class="footer-reseaux">
+                    <li>
+                        <a href="https://facebook.com" target="_blank" rel="noopener">
+                            <img src="img/facebook.avif" alt="Facebook" width="32" height="32" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com" target="_blank" rel="noopener">
+                            <img src="img/insta.avif" alt="Instagram" width="32" height="32" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener">
+                            <img src="img/linkedin.png" alt="LinkedIn" width="32" height="32" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bas">
+            <span> © 2026 : Projet GLP n°49 ECRITURE : CY Cergy Paris Universite</span>
+            <span>Realise par le trinome GLP : Tous droits reserves</span>
+        </div>
+    </footer>
+
+</body>
+</html>
