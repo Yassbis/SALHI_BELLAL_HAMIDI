@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Description detaillee du projet GLP ECRITURE - Reconnaissance de caracteres manuscrits">
+    <title>Projet - GLP ECRITURE</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+</head>
+
+<body>
+
+    <header id="en-tete">
+        <h1>Projet GLP n°49 : ECRITURE</h1>
+        <p>Description detaillee du projet</p>
+        <span class="sous-titre">Reconnaissance de caracteres manuscrits</span>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="projet.html" class="active">Projet</a></li>
+            <li><a href="cahier-des-charges.html">Cahier des charges</a></li>
+            <li><a href="equipe.html">Equipe</a></li>
+            <li><a href="technologie.html">Technologies</a></li>
+            <li><a href="realisations.html">Realisations</a></li>
+           
+        </ul>
+    </nav>
+
+    <main class="contenu-principal">
+        <section>
+            <h2>Presentation du projet</h2>
+            <div class="clearfix">
+                <img src="img/matrice.png"
+                     alt="Grille de pixels montrant des lettres manuscrites numerisees"
+                     class="illustration-droite">
+                <p>
+                    Le projet <strong>GLP n°49 : ECRITURE</strong> vise a concevoir et
+                    developper un logiciel de <em>reconnaissance de caracteres et de mots manuscrits</em>.
+                    Il s'agit d'un systeme interactif permettant a un utilisateur de dessiner des
+                    lettres a l'aide de la souris, puis d'obtenir une reconnaissance automatique
+                    de son ecriture.
+                </p>
+                <p>
+                    Le logiciel combine des techniques d'<strong>algorithmique</strong>,
+                    d'<strong>interface graphique (IHM)</strong> et d'<strong>intelligence artificielle
+                    simplifiee</strong> pour offrir une experience d'apprentissage progressive et
+                    personnalisee.
+                </p>
+            </div>
+        </section>
+
+        <hr class="separateur">
+
+        <section>
+            <h2>Reconnaissance de lettres</h2>
+            <article>
+                <h3>Principe de fonctionnement</h3>
+                <p>
+                    Chaque lettre manuscrite est dessinee par l'utilisateur sur une
+                    <strong>zone de dessin graphique</strong> a l'aide du curseur de la souris,
+                    qui fait office de <em>stylo virtuel</em>.
+                </p>
+                <p>
+                    La zone d'ecriture est <strong>discretisee</strong> sous forme d'une grille
+                    carree de taille <strong>15 × 15</strong>, composee de 225 cases.
+                    Pour chaque case :
+                </p>
+                <ul>
+                    <li>Une valeur <strong>1</strong> est attribuee si des pixels du trace sont presents</li>
+                    <li>Une valeur <strong>0</strong> est attribuee dans le cas contraire</li>
+                </ul>
+                <p>
+                    Ainsi, chaque lettre manuscrite est convertie en une <em>matrice binaire
+                    15 × 15</em>, ce qui permet sa comparaison numerique avec les lettres
+                    deja enregistrees dans la base de donnees.
+                </p>
+            </article>
+
+            <article>
+                <h3>Mesure de similarite</h3>
+                <img src="img/unnamed.jpg"
+                     alt="Schema de comparaison entre deux matrices de caracteres"
+                     class="illustration-section">
+                <p>
+                    Pour reconnaitre une lettre, le systeme utilise une <strong>mesure de
+                    similarite</strong> (distance entre matrices) afin d'evaluer le degre de
+                    ressemblance entre la lettre saisie et les lettres connues. Le caractere
+                    dont la representation est la <em>plus proche</em> est propose comme
+                    resultat de reconnaissance.
+                </p>
+            </article>
+        </section>
+
+        <hr class="separateur">
+
+        <section>
+            <h2>Reconnaissance de mots</h2>
+            <article>
+                <h3>Du caractere au mot</h3>
+                <p>
+                    Dans le cas de la reconnaissance de mots, chaque lettre est traitee
+                    <strong>independamment</strong> selon le meme processus algorithmique. Les
+                    lettres reconnues sont ensuite <em>assemblees dans l'ordre de saisie</em>
+                    afin de former un mot complet.
+                </p>
+                <p>
+                    Le systeme est dimensionne pour traiter des mots d'une longueur maximale
+                    de <strong>20 caracteres successifs</strong>, correspondant a une sequence
+                    de 20 grilles distinctes.
+                </p>
+            </article>
+
+            <article>
+                <h3>Verification et correction</h3>
+                <p>
+                    Apres la reconnaissance des lettres individuelles, le mot forme est
+                    <strong>verifie</strong> a l'aide de fichiers externes (CSV, TXT ou PDF)
+                    contenant des representations de lettres et de mots. Cette etape permet
+                    de <em>corriger certaines erreurs</em> et de reconnaitre des mots complets
+                    avec davantage de fiabilite.
+                </p>
+            </article>
+        </section>
+
+        <hr class="separateur">
+
+        <section>
+            <h2>Apprentissage progressif</h2>
+            <article>
+                <h3>Bases de donnees individuelles</h3>
+                <div class="clearfix">
+                    <img src="img/apprentissage.png"
+                         alt="Schema illustrant l apprentissage progressif de l IA"
+                         class="illustration-droite">
+                    <p>
+                        Chaque utilisateur dispose de sa propre <strong>base de donnees
+                        personnelle</strong> contenant ses lettres et mots enregistres. L'IA compare
+                        chaque nouvelle lettre <em>uniquement</em> avec les donnees de l'utilisateur
+                        correspondant, ce qui permet un apprentissage adapte au
+                        <strong>style calligraphique</strong> de chacun.
+                    </p>
+                </div>
+            </article>
+
+            <article>
+                <h3>Amelioration continue</h3>
+                <p>
+                    Chaque fois qu'une nouvelle lettre est dessinee, elle est <strong>ajoutee a
+                    la base</strong> de l'utilisateur. Cette approche permet un
+                    <em>apprentissage incremental</em> : le systeme devient plus precis a mesure
+                    que l'utilisateur utilise le logiciel.
+                </p>
+                <p>
+                    L'approche d'IA est <strong>simplifiee et simulee</strong>, suffisante pour
+                    apprendre le style d'ecriture individuel et effectuer une reconnaissance
+                    fiable, tout en introduisant les concepts fondamentaux de l'intelligence
+                    artificielle de maniere <em>pedagogique</em>.
+                </p>
+            </article>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-contenu">
+            <div class="footer-section">
+                <h3>Projet GLP ECRITURE</h3>
+                <span>
+                    Logiciel de reconnaissance de caracteres et de mots manuscrits,
+                    developpe dans le cadre du module Genie Logiciel et Projet.
+                </span>
+                <span><a href="index.html">Retour a l'accueil</a></span>
+            </div>
+            <div class="footer-section">
+                <h3>Navigation</h3>
+                <ul class="footer-liens">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="projet.html">Projet</a></li>
+                    <li><a href="equipe.html">Equipe</a></li>
+                    <li><a href="technologie.html">Technologies</a></li>
+                    <li><a href="realisations.html">Realisations</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <address>
+                    <span class="footer-info">L2 Informatique : CY Cergy Paris Universite</span>
+                    <span class="footer-info">
+                        <a href="https://www.google.com/maps/place/Saint-Martin,+2+Av.+Adolphe+Chauvin,+95300+Pontoise"
+                           target="_blank" rel="noopener">
+                            2 Av. Adolphe Chauvin, 95300 Pontoise
+                        </a>
+                    </span>
+                </address>
+            </div>
+            <div class="footer-section">
+                <h3>Suivez-nous</h3>
+                <ul class="footer-reseaux">
+                    <li>
+                        <a href="https://facebook.com" target="_blank" rel="noopener">
+                            <img src="img/facebook.avif" alt="Facebook" width="32" height="32">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com" target="_blank" rel="noopener">
+                            <img src="img/insta.avif" alt="Instagram" width="32" height="32">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener">
+                            <img src="img/linkedin.png" alt="LinkedIn" width="32" height="32">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bas">
+            <span>&copy; 2026 : Projet GLP n°49 ECRITURE : CY Cergy Paris Universite</span>
+            <span>Realise par le trinome GLP : Tous droits reserves</span>
+        </div>
+    </footer>
+
+</body>
+</html>
