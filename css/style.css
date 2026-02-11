@@ -413,7 +413,25 @@ aside h3 {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     border: 2px solid #e6d5b0;
 }
-
+.illustration-droitee {
+    float: right;
+    width: 150px;
+    max-width: 40%;
+    margin: 0 0 1em 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #e6d5b0;
+}
+.illustration-droite1 {
+    float: right;
+    width: 380px;
+    height: 220px;
+    max-width: 40%;
+    margin: 0 0 1em 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #e6d5b0;
+}
 
 .illustration-gauche {
     float: left;
@@ -561,3 +579,4 @@ footer address {
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
     border: 3px solid #e6d5b0;
 }
+
